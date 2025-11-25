@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: kmularski
+      changes:
+        dropNotNullConstraint:
+          tableName: actors
+          columnName: country_id
+          columnDataType: bigint

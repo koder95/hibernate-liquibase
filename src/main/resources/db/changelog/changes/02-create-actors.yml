@@ -1,6 +1,6 @@
 databaseChangeLog:
   - changeSet:
-      id: create-tables
+      id: 2
       author: kmularski
       changes:
         - createTable:
@@ -22,6 +22,5 @@ databaseChangeLog:
                   name: country_id
                   type: bigint
                   constraints:
-                    nullable: false
                     foreignKeyName: fk_actor_country
                     references: countries(id)
